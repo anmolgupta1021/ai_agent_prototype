@@ -127,35 +127,45 @@ evaluate
 rouge-score
 
 Install all via:
+``` bash
 
 pip install -r requirements.txt
+```
 
 ## 🧩 Notes
 
 You may change the base model in train_lora.py by modifying the MODEL variable.
 
 The LoRA adapter output directory (models/lora_adapter) should contain:
+``` bash
 
 adapter_config.json
 
 adapter_model.safetensors
-
+```
 For low-resource machines, use smaller models like google/flan-t5-small.
 
 ## 🏁 Example Command Summary
 # Fine-tune
+``` bash
 python train_lora.py --train_file sample_data/train.jsonl --validation_file sample_data/val.jsonl --output_dir models/lora_adapter
+```
 
 # Run Inference
+``` bash
 python agent_executor.py --adapter models/lora_adapter --input_file sample_data/val.jsonl
+```
 
 # Launch Streamlit Interface
+``` bash
 streamlit run src/streamlit_app.py
+```
 
 📧 Contact
 ## 👨‍🎓 Author Information
 
 Name: Anmol Gupta<br>
+Roll No.: 230156 <br>
 University: Indian Institute of Technology (IIT) Kanpur<br>
 Department: Department of Statistics and Data Science<br><br>
 This project is submitted as part of the AI Internship Application Task.
