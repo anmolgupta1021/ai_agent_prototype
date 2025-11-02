@@ -61,24 +61,31 @@ python -m venv venv
 venv\Scripts\activate      # Windows
 source venv/bin/activate   # macOS/Linux
 ---
+```
+
 
 ### 2️⃣ Install dependencies
 ```bash
 pip install -r requirements.txt
-
+```
 ### 3️⃣ Train the LoRA adapter
+``` bash
 python train_lora.py \
   --train_file sample_data/train.jsonl \
   --validation_file sample_data/val.jsonl \
   --output_dir models/lora_adapter
-
-4️⃣ Run inference on validation data
+```
+### 4️⃣ Run inference on validation data
+``` bash
 python agent_executor.py --adapter models/lora_adapter --input_file sample_data/val.jsonl
+```
 
-5️⃣ Launch the Streamlit app
+### 5️⃣ Launch the Streamlit app
+``` bash
 streamlit run src/streamlit_app.py
+```
 
-🧪 Evaluation
+##🧪 Evaluation
 
 Evaluation is performed using ROUGE-L and qualitative comparison between human-written and AI-generated summaries.
 The eval.py script provides a quick scoring utility.
