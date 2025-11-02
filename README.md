@@ -85,16 +85,17 @@ python agent_executor.py --adapter models/lora_adapter --input_file sample_data/
 streamlit run src/streamlit_app.py
 ```
 
-##🧪 Evaluation
+## 🧪 Evaluation
 
 Evaluation is performed using ROUGE-L and qualitative comparison between human-written and AI-generated summaries.
 The eval.py script provides a quick scoring utility.
 
 Example:
-
+```bash
 python eval.py --ref sample_data/val.jsonl --pred outputs/generated.jsonl
+```
 
-📊 Deliverables
+## 📊 Deliverables
 
 ✅ Source code of prototype
 
@@ -106,15 +107,8 @@ python eval.py --ref sample_data/val.jsonl --pred outputs/generated.jsonl
 
 ✅ (Optional) Screenshots or demo video
 
-👨‍🎓 Author Information
 
-Name: Anmol Gupta
-University: Indian Institute of Technology (IIT) Kanpur
-Department: Department of Statistics and Data Science
-
-This project is submitted as part of the AI Internship Application Task.
-
-🧰 Dependencies
+## 🧰 Dependencies
 
 Key libraries:
 
@@ -136,7 +130,7 @@ Install all via:
 
 pip install -r requirements.txt
 
-🧩 Notes
+## 🧩 Notes
 
 You may change the base model in train_lora.py by modifying the MODEL variable.
 
@@ -148,7 +142,7 @@ adapter_model.safetensors
 
 For low-resource machines, use smaller models like google/flan-t5-small.
 
-🏁 Example Command Summary
+## 🏁 Example Command Summary
 # Fine-tune
 python train_lora.py --train_file sample_data/train.jsonl --validation_file sample_data/val.jsonl --output_dir models/lora_adapter
 
@@ -159,9 +153,12 @@ python agent_executor.py --adapter models/lora_adapter --input_file sample_data/
 streamlit run src/streamlit_app.py
 
 📧 Contact
+## 👨‍🎓 Author Information
 
-For any queries or clarification:
-Email: anmolgupta@iitk.ac.in
+Name: Anmol Gupta
+University: Indian Institute of Technology (IIT) Kanpur
+Department: Department of Statistics and Data Science
 
-GitHub: github.com/anmolgupta-ai
+This project is submitted as part of the AI Internship Application Task.
+
  
