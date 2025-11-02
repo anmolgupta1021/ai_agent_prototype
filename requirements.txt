@@ -1,0 +1,10 @@
+transformers>=4.30.0
+datasets
+accelerate
+peft
+bitsandbytes
+torch
+sentencepiece
+rouge_score
+pymupdf
+tqdm

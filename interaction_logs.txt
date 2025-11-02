@@ -1,0 +1,5 @@
+User: Explain Bayesian inference.
+Model: Bayesian inference updates beliefs as new data arrives.
+
+User: Give an example.
+Model: For example, updating the probability of rain after observing clouds.
