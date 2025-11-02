@@ -60,11 +60,13 @@ User → Planner → Executor (Flan-T5 + LoRA) → Evaluator → Output Summary
 python -m venv venv
 venv\Scripts\activate      # Windows
 source venv/bin/activate   # macOS/Linux
+---
 
-2️⃣ Install dependencies
+### 2️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
 
-3️⃣ Train the LoRA adapter
+### 3️⃣ Train the LoRA adapter
 python train_lora.py \
   --train_file sample_data/train.jsonl \
   --validation_file sample_data/val.jsonl \
