@@ -155,10 +155,8 @@ streamlit run src/streamlit_app.py
 📧 Contact
 ## 👨‍🎓 Author Information
 
-Name: Anmol Gupta
-University: Indian Institute of Technology (IIT) Kanpur
-Department: Department of Statistics and Data Science
-
+Name: Anmol Gupta<br>
+University: Indian Institute of Technology (IIT) Kanpur<br>
+Department: Department of Statistics and Data Science<br><br>
 This project is submitted as part of the AI Internship Application Task.
 
- 
